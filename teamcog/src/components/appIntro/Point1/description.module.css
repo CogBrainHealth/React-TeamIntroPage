@@ -6,12 +6,12 @@
   position: relative;
 }
 
-.image{
-  top: 1038px
-  left:144px;
+.image {
+  top: 1038px;
+  left: 144px;
 }
 
-.korDescription{
+.korDescription {
   position: absolute;
   top: 228px;
   left: 522px;
@@ -20,10 +20,10 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0;
-  color:#000000;
+  color: #000000;
 }
 
-.korAddedDescription{
+.korAddedDescription {
   position: absolute;
   top: 328px;
   left: 522px;
@@ -32,10 +32,10 @@
   font-size: 15px;
   line-height: 150%;
   letter-spacing: 0;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
-.engDescription{
+.engDescription {
   position: absolute;
   top: 388px;
   left: 522px;
@@ -44,10 +44,10 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0;
-  color: #C0C0C0;
+  color: #c0c0c0;
 }
 
-.engAddedDescription{
+.engAddedDescription {
   position: absolute;
   top: 458px;
   left: 522px;
@@ -56,5 +56,5 @@
   font-size: 15px;
   line-height: 150%;
   letter-spacing: 0;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
