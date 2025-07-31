@@ -33,7 +33,7 @@ export default function StartAppSection() {
 
       <div className={styles.imageBox}>
         <Image
-          src="/CogBrainImage.svg"
+          src="/CogBrainImage.png"
           alt="Cog Character"
           width={700}
           height={700}

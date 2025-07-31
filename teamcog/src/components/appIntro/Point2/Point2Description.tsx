@@ -13,10 +13,10 @@ export default function Point2Description() {
       />
       <Image
         className={styles.games}
-        src="/appImages/Point2Games.svg"
+        src="/appImages/Point2Games.png"
         alt="graph"
-        width={800}
-        height={800}
+        width={700}
+        height={480}
         priority
       />
     </section>

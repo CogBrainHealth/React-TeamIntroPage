@@ -13,9 +13,9 @@ export default function TeamLead() {
           priority
         />
         <Image
-          src="/images/TeamLead.svg"
+          src="/images/TeamLead.png"
           alt="Team Leader"
-          width={300}
+          width={220}
           height={300}
           priority
         />

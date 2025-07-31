@@ -2,17 +2,17 @@ import Image from "next/image";
 import styles from "./TeamMember.module.css";
 export default function TeamMember() {
   const memberImages = [
-    "/images/Member1.svg",
-    "/images/Member2.svg",
-    "/images/Member3.svg",
-    "/images/Member4.svg",
-    "/images/Member5.svg",
-    "/images/Member6.svg",
-    "/images/Member7.svg",
-    "/images/Member8.svg",
+    "/images/Member1.png",
+    "/images/Member2.png",
+    "/images/Member3.png",
+    "/images/Member4.png",
+    "/images/Member5.png",
+    "/images/Member6.png",
+    "/images/Member7.png",
+    "/images/Member8.png",
   ];
 
-  const memberImageWidth = 300;
+  const memberImageWidth = 220;
   const memberImageHeight = 300;
 
   return (
