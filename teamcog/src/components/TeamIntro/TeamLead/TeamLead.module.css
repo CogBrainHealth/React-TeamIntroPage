@@ -1,0 +1,12 @@
+.lead {
+  height: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c3bfe;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

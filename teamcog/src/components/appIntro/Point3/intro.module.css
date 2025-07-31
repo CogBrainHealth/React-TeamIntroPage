@@ -1,0 +1,67 @@
+.back {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.headerIndex {
+  position: absolute;
+  top: 3568px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #facb67;
+}
+
+.headerTitle {
+  position: absolute;
+  top: 3637px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #6349eb;
+}
+
+.headerSubtitle {
+  position: absolute;
+  top: 3787px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #52505a;
+}
+
+.headerAddSubtitle {
+  position: absolute;
+  top: 3787px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.headerengSubtitle {
+  position: absolute;
+  top: 3937px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #000000;
+}

@@ -1,0 +1,52 @@
+.back {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.title {
+  position: absolute;
+  top: 4568px;
+  left: 200px;
+  text-align: left;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #6349eb;
+}
+
+.subtitle {
+  position: absolute;
+  top: 4608px;
+  left: 200px;
+  text-align: left;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.description {
+  position: absolute;
+  top: 4718px;
+  left: 200px;
+  text-align: left;
+  font-family: "NPS font", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 180%;
+  letter-spacing: 0;
+  color: #52505a;
+}
+
+.image {
+  position: absolute;
+  top: 4418px;
+  left: 750px;
+}

@@ -1,0 +1,18 @@
+.back {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+
+.graphImg {
+  margin-top: -80px;
+  display: block;
+}
+
+.games {
+  margin-top: -250px; /* Add some space between the two images */
+  display: block;
+}

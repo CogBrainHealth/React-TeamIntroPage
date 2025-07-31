@@ -1,0 +1,95 @@
+.back {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c3bfe;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #5f44f8;
+  color: white;
+}
+
+.textBox {
+  flex: 1;
+  max-width: 600px;
+}
+
+.imageBox {
+  bottom: -30px;
+  left: 80px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subTitle {
+  position: absolute;
+  top: 125px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.mainTitle {
+  position: absolute;
+  top: 161px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.highlight {
+  position: absolute;
+  top: 256px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.description {
+  position: absolute;
+  top: 433px;
+  left: 144px;
+  font-family: "NPS font";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+
+  leading-trim: NONE;
+  line-height: 200%;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+
+.notice {
+  position: absolute;
+  top: 712;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 250;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+}

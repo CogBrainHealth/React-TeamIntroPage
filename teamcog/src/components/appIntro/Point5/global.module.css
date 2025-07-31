@@ -1,0 +1,73 @@
+.back {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    ),
+    url("/appImages/Point5Background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.textWrapper {
+  text-align: center;
+  transform: translateY(-120px);
+}
+
+.headerIndex {
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #facb67;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #6349eb;
+  margin-bottom: 40px;
+}
+
+.headerSubtitle {
+  font-family: "NPS font", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 0;
+  color: #52505a;
+  margin-bottom: 20px;
+}
+
+.info {
+  position: absolute;
+  bottom: 70px;
+  left: 120px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 180%;
+  color: ##ffffffb2;
+}
+
+.info a {
+  text-decoration: underline;
+  color: ##ffffffb2;
+  cursor: pointer;
+}
+
+.downLoadImage {
+  position: absolute;
+  bottom: 0px;
+  right: 120px;
+}

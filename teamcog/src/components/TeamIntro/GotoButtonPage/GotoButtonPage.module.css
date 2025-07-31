@@ -1,0 +1,13 @@
+.backgroundcss {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c3bfe;
+}
+.imageButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

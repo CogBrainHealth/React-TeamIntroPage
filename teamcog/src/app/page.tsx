@@ -1,13 +1,15 @@
-import AppIntro from "@/components/AppIntro/AppIntro";
-import TeamLead from "@/components/TeamLead/TeamLead";
-import TeamMember from "@/components/TeamMember/TeamMember";
+import StartSection from "@/components/TeamIntro/StartSection/StartSection";
+import GotoButtonPage from "@/components/TeamIntro/GotoButtonPage/GotoButtonPage";
+import TeamLead from "@/components/TeamIntro/TeamLead/TeamLead";
+import TeamMember from "@/components/TeamIntro/TeamMember/TeamMember";
 
 export default function Home() {
   return (
     <div>
-      <AppIntro />
+      <StartSection />
       <TeamLead />
       <TeamMember />
+      <GotoButtonPage />
     </div>
   );
 }

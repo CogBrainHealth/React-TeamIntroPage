@@ -1,0 +1,67 @@
+.back {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.headerIndex {
+  position: absolute;
+  top: 137px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #facb67;
+}
+
+.headerTitle {
+  position: absolute;
+  top: 196px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #6349eb;
+}
+
+.headerSubtitle {
+  position: absolute;
+  top: 356px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #52505a;
+}
+
+.headerAddSubtitle {
+  position: absolute;
+  top: 386px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.headerengSubtitle {
+  position: absolute;
+  top: 536px;
+  left: 144px;
+  font-family: "NPS font", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #000000;
+}
