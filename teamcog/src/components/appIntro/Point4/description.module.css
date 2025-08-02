@@ -1,27 +1,32 @@
 .back {
   height: 100vh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  padding: 0 5%;
   background-color: #ffffff;
   position: relative;
+  box-sizing: border-box;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .description {
-  position: absolute;
-  top: 250px;
-  left: 144px;
   font-family: "NPS font", sans-serif;
   font-weight: 600;
   font-size: 25px;
-  line-height: 200%;
+  line-height: 180%;
   letter-spacing: 0;
   color: #000000;
 }
 
 .addDescription {
-  position: absolute;
-  top: 500px;
-  left: 144px;
   font-family: "NPS font", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -29,10 +34,8 @@
   letter-spacing: 0;
   color: #000000;
 }
+
 .warning {
-  position: absolute;
-  top: 550px;
-  left: 144px;
   font-family: "NPS font", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -41,8 +44,48 @@
   color: #c0c0c0;
 }
 
-.image {
-  position: absolute;
-  top: 100px;
-  left: 700px;
+.imageContainer {
+  flex: 1;
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+  max-width: 500px;
+  max-height: 500px;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .back {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .addDescription {
+    font-size: 16px;
+  }
+
+  .warning {
+    font-size: 12px;
+  }
+
+  .imageContainer {
+    width: 80vw;
+    height: 90vw;
+    margin-top: 40px;
+  }
+}
+.back {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
 }

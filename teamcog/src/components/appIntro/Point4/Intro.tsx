@@ -3,7 +3,7 @@ export default function Intro() {
   return (
     <>
       <section className={styles.back}>
-        <h1 className={styles.headerIndex}>point2</h1>
+        <h1 className={styles.headerIndex}>point4</h1>
         <p className={styles.headerTitle}>
           게임처럼 가볍게,
           <br />뇌 훈련

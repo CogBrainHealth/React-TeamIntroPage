@@ -1,9 +1,10 @@
 import styles from "./description.module.css";
 import Image from "next/image";
+
 export default function Desctription() {
   return (
-    <>
-      <section className={styles.back}>
+    <section className={styles.back}>
+      <div className={styles.textContainer}>
         <p className={styles.description}>
           -<br />
           건강기능식품, 아무거나 고르기엔 너무 많고 불안하죠.
@@ -18,15 +19,16 @@ export default function Desctription() {
           ※ 건강기능식품은 질병 치료제가 아니며, 전문가 상담이 필요할 수
           있습니다.
         </p>
+      </div>
+      <div className={styles.imageContainer}>
         <Image
-          className={styles.image}
           src="/appImages/Point4PhoneImg.svg"
           alt="phoneImg"
-          width={600}
-          height={600}
+          fill
           priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
