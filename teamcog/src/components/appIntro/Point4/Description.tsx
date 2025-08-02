@@ -20,15 +20,6 @@ export default function Desctription() {
           있습니다.
         </p>
       </div>
-      <div className={styles.imageContainer}>
-        <Image
-          src="/appImages/Point4PhoneImg.svg"
-          alt="phoneImg"
-          fill
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
     </section>
   );
 }
