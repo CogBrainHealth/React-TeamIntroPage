@@ -4,17 +4,16 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #f6f6f6;
-  position: relative;
   padding: 5vh 5vw;
+  background-color: #f6f6f6;
   box-sizing: border-box;
 }
 
 .mainContent {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
   width: 100%;
 }
@@ -57,13 +56,15 @@
   padding-top: 20px;
 }
 
-.korAddedDescription,
-.engAddedDescription {
+.korAddedDescription {
   font-family: "NPS font", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 150%;
   color: #d3d3d3;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .mainContent {

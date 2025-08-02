@@ -32,9 +32,6 @@ export default function Point1Description() {
         <p className={styles.korAddedDescription}>
           ※ 이 검사는 의료 진단이 아닌, 자기 건강 관리를 위한 참고용입니다.
         </p>
-        <p className={styles.engAddedDescription}>
-          ※ For personal health tracking only, not a medical diagnosis.
-        </p>
       </div>
     </section>
   );
