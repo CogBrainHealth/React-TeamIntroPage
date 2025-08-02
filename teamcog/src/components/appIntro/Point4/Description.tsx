@@ -20,6 +20,15 @@ export default function Desctription() {
           있습니다.
         </p>
       </div>
+      <div className={styles.imageContainer}>
+        <Image
+          src="/appimages/Point4PhoneImg.svg"
+          alt="MMSE 그룹"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 15vw, 100vw"
+        />
+      </div>
     </section>
   );
 }
