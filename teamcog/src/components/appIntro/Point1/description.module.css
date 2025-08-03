@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5vh 5vw;
   background-color: #f6f6f6;
@@ -13,53 +13,53 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end; /* 이미지와 텍스트 컨테이너가 아래에 정렬되도록 수정 */
-  flex-grow: 1;
+  align-items: center;
   width: 100%;
+  max-width: 1200px;
+  gap: 5vw;
 }
 
 .imageWrapper {
   position: relative;
   width: 50vw;
   max-width: 600px;
-  margin-right: 5vw;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0px;
-  right: 1%;
 }
 
 .mainImageContainer {
   position: relative;
-  width: 120%;
-  right: 10%;
-  height: auto;
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  right: 15%; /* Adjusted for a more balanced layout */
+  padding-bottom: 100%;
 }
 
 .topRightImageContainer {
   position: absolute;
   top: 10%;
-  right: -130%;
-  width: 150%;
-  height: 38%;
+  right: -100%; /* Adjusted to be less aggressive, preventing overlap issues */
+  width: 140%; /* Adjusted width */
+  height: 40%; /* Adjusted height */
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
-  margin-top: 20px;
-  align-self: flex-end;
-  position: relative; /* ➕ */
-  left: -12vw;
-  top: -5vw; /* ➕ 왼쪽으로 이동 */
+  justify-content: flex-start; /* Aligns text to the top */
+  align-self: flex-end; /* Pushes the text container to the bottom */
+  gap: 0;
+  width: 80%; /* Increased horizontal space for text */
+  max-width: 900px; /* Increased max-width to prevent squishing on large screens */
+  position: relative;
+  left: -15vw; /* Moved text container slightly to the left */
+  bottom: 3vw; /* Moved text container down */
 }
+
 .korDescription {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-weight: 600;
-  font-size: 18px; /* 글씨 크기 줄임 */
+  font-size: 1.125rem;
   line-height: 150%;
   color: #000000;
   text-align: left;
@@ -68,7 +68,7 @@
 .engDescription {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-weight: 500;
-  font-size: 18px; /* 글씨 크기 줄임 */
+  font-size: 1.125rem;
   line-height: 150%;
   color: #00000080;
   text-align: left;
@@ -77,7 +77,7 @@
 .korAddedDescription {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-weight: 400;
-  font-size: 14px; /* 글씨 크기 줄임 */
+  font-size: 0.875rem;
   line-height: 150%;
   color: #00000080;
   margin: 0;
@@ -87,7 +87,7 @@
 .engAddedDescription {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-weight: 400;
-  font-size: 14px; /* 글씨 크기 줄임 */
+  font-size: 0.875rem;
   line-height: 150%;
   color: #00000080;
   margin: 0;
@@ -98,38 +98,36 @@
   .mainContent {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .imageWrapper {
     width: 70vw;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .mainImageContainer {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    max-width: 400px;
   }
 
   .topRightImageContainer {
+    right: -10%;
     width: 40%;
+    height: 40%;
   }
 
   .textContainer {
-    margin-top: 20px;
+    width: 80vw;
     align-items: center;
+    text-align: center;
+    position: static; /* Removed absolute positioning on mobile */
   }
 
   .korDescription,
   .engDescription {
-    font-size: 14px; /* 모바일 글씨 크기 줄임 */
+    font-size: 1rem;
     text-align: center;
   }
 
   .korAddedDescription,
   .engAddedDescription {
-    font-size: 11px; /* 모바일 글씨 크기 줄임 */
+    font-size: 0.75rem;
     text-align: center;
   }
 }

@@ -6,11 +6,7 @@ export default function Point1Description() {
     <section className={styles.back}>
       <div className={styles.mainContent}>
         <div className={styles.imageWrapper}>
-          {" "}
-          {/* 새로운 이미지들을 감싸는 div */}
           <div className={styles.mainImageContainer}>
-            {" "}
-            {/* 기존 이미지 컨테이너 */}
             <Image
               src="/appimages/Point1PhoneImg.svg"
               alt="MMSE검사 "
@@ -20,8 +16,6 @@ export default function Point1Description() {
             />
           </div>
           <div className={styles.topRightImageContainer}>
-            {" "}
-            {/* 새로운 이미지 컨테이너 */}
             <Image
               src="/appimages/Point1Groups.png"
               alt="MMSE 그룹"
@@ -41,8 +35,10 @@ export default function Point1Description() {
           </p>
           <p className={styles.korAddedDescription}>
             ※ 이 검사는 의료 진단이 아닌, 자기 건강 관리를 위한 참고용입니다.
+            <br />
           </p>
           <p className={styles.engDescription}>
+            <br />
             Cog콕 uses MMSE-based tests and game data to check your memory,
             <br /> language, attention, and spatial skills. <br />
           </p>

@@ -25,10 +25,6 @@ export default function StartAppSection() {
           생활습관을 바꿔나갑니다. <br />
           뇌영양제, 식단, 운동까지 당신에게 꼭 맞는 가이드를 제공합니다.
         </p>
-        <p className={styles.notice}>
-          ※ Cog콕은 의료기기 또는 진단 도구가 아니며, 정보제공 목적입니다.
-          정확한 판단이 필요할 경우 의료 전문가의 상담을 권장드립니다.
-        </p>
       </div>
 
       <div className={styles.imageBox}>
