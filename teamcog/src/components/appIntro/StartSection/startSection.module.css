@@ -84,11 +84,12 @@
 
 .notice {
   position: absolute;
-  top: 712;
+  top: 712px;
   left: 144px;
-  font-family: "NPS font", sans-serif;
+  font-family: "NPS font";
   font-weight: 250;
-  font-size: 12px;
+  font-size: 100px;
+
   line-height: 180%;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.9);
