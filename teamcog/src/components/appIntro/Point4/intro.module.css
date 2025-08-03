@@ -1,67 +1,76 @@
 .back {
-  height: 100vh;
+  /* Use Flexbox to align content */
   display: flex;
-  align-items: center;
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center; /* Vertically centers the content */
+  height: 100vh;
   background-color: #ffffff;
-  position: relative;
+  padding: 20px; /* Adds padding for spacing on smaller screens */
+}
+
+.textContainer {
+  /* This container holds all the text and stacks it vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px; /* Sets a max-width for better readability on large screens */
+  width: 100%;
+  margin-left: 10%; /* Adds margin to the left for positioning */
 }
 
 .headerIndex {
-  position: absolute;
-  top: 150px;
-  left: 144px;
+  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: clamp(24px, 3vw, 30px); /* Responsive font size */
   line-height: 100%;
   letter-spacing: 0;
   color: #facb67;
+  margin-bottom: 10px;
 }
 
 .headerTitle {
-  position: absolute;
-  top: 196px;
-  left: 144px;
+  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: clamp(32px, 5vw, 40px); /* Responsive font size */
   line-height: 150%;
   letter-spacing: 0;
   color: #6349eb;
+  margin-bottom: 20px;
 }
 
 .headerSubtitle {
-  position: absolute;
-  top: 356px;
-  left: 144px;
+  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 100%;
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 150%;
   letter-spacing: 0;
   color: #52505a;
+  margin-bottom: 15px;
 }
 
 .headerAddSubtitle {
-  position: absolute;
-  top: 386px;
-  left: 144px;
+  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
   line-height: 150%;
   letter-spacing: 0;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .headerengSubtitle {
-  position: absolute;
-  top: 536px;
-  left: 144px;
+  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 200;
-  font-size: 15px;
+  font-size: clamp(12px, 1.5vw, 15px);
   line-height: 150%;
   letter-spacing: 0;
   color: #000000;
+  margin-top: 0;
 }

@@ -1,4 +1,5 @@
 import styles from "./Point1.module.css";
+
 export default function Point1Intro() {
   return (
     <section className={styles.back}>

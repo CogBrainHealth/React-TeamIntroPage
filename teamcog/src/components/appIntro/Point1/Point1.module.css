@@ -1,42 +1,47 @@
 .back {
+  justify-content: flex-start;
+  align-items: center;
   height: 60vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f6f6f6;
 }
 
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+  max-width: 600px;
+  width: 100%;
+
+  margin-left: 10%;
+}
+
 .headerIndex {
-  position: absolute;
-  top: 887px;
-  left: 144px;
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);
   line-height: 100%;
   letter-spacing: 0;
   color: #facb67;
+  margin-bottom: 10px;
 }
 
 .headerTitle {
-  position: absolute;
-  top: 956px;
-  left: 144px;
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: clamp(30px, 6vw, 40px);
   line-height: 150%;
   letter-spacing: 0;
   color: #6349eb;
+  margin-bottom: 20px;
 }
 
 .headerSubtitle {
-  position: absolute;
-  top: 1106px;
-  left: 144px;
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   line-height: 100%;
   letter-spacing: 0;
   color: #52505a;

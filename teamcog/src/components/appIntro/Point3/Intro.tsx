@@ -13,9 +13,7 @@ export default function Intro() {
           검사와 게임 결과를 바탕으로, 당신만을 위한 가이드를 만들어드립니다.
         </p>
         <p className={styles.headerAddSubtitle}>
-          <br />
-          <br />
-          -
+          <br />-
           <br />
           뇌영양제, 식단, 운동까지 지금 나에게 필요한 것만 담았습니다. 무엇부터
           시작할지 몰라도
