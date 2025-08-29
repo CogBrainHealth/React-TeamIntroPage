@@ -11,49 +11,51 @@
 
 .mainContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* 왼쪽(이미지)과 오른쪽(이미지+텍스트)을 가로로 나열 */
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  gap: 5vw;
+  gap: 1vw;
 }
 
 .imageWrapper {
   position: relative;
-  width: 50vw;
-  max-width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 55vw; /* main Image 크기 증가 */
+  max-width: 650px; /* main Image 최대 너비 증가 */
 }
 
 .mainImageContainer {
   position: relative;
   width: 100%;
-  right: 15%; /* Adjusted for a more balanced layout */
   padding-bottom: 100%;
 }
 
+.rightItem {
+  display: flex;
+  flex-direction: column; /* 오른쪽의 이미지와 텍스트를 위아래로 정렬 */
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  gap: 20px;
+}
+
 .topRightImageContainer {
-  position: absolute;
-  top: 10%;
-  right: -100%; /* Adjusted to be less aggressive, preventing overlap issues */
-  width: 140%; /* Adjusted width */
-  height: 40%; /* Adjusted height */
+  position: relative;
+  width: 100%; /* right image 가로 크기 감소 */
+  max-width: 600px; /* right image 최대 너비 조정 */
+  height: auto;
+  aspect-ratio: 2/0.8; /* right image 세로 길이 감소 (더 넓적하게) */
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Aligns text to the top */
-  align-self: flex-end; /* Pushes the text container to the bottom */
-  gap: 0;
-  width: 80%; /* Increased horizontal space for text */
-  max-width: 900px; /* Increased max-width to prevent squishing on large screens */
-  position: relative;
-  left: -15vw; /* Moved text container slightly to the left */
-  bottom: 3vw; /* Moved text container down */
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
 }
 
 .korDescription {
@@ -102,21 +104,25 @@
   }
 
   .imageWrapper {
-    width: 70vw;
+    width: 80vw;
     max-width: 400px;
   }
 
+  .rightItem {
+    width: 90%;
+    align-items: center;
+    gap: 10px;
+  }
+
   .topRightImageContainer {
-    right: -10%;
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    max-width: 300px;
+    aspect-ratio: 4/3; /* 모바일에서도 비율 유지 */
   }
 
   .textContainer {
-    width: 80vw;
-    align-items: center;
+    width: 90%;
     text-align: center;
-    position: static;
   }
 
   .korDescription,
