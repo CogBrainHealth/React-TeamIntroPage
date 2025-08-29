@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background-color: #5c3bfe;
-  color: white; 
+  color: white;
   padding: 200px 20px;
   box-sizing: border-box;
   min-height: 100vh;
@@ -17,27 +17,30 @@
     padding: 80px;
   }
   .imageBox {
-    justify-content: flex-start
+    justify-content: flex-start;
     margin-left: -50px;
   }
 }
 @font-face {
-  font-family: 'NationalPension';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontRegular.woff2') format('woff2');
+  font-family: "NationalPension";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontRegular.woff2")
+    format("woff2");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'NationalPension';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+  font-family: "NationalPension";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2")
+    format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'NationalPension';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontExtraBold.woff2') format('woff2');
+  font-family: "NationalPension";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontExtraBold.woff2")
+    format("woff2");
   font-weight: 800;
   font-display: swap;
 }
@@ -60,54 +63,54 @@
 .imageBox {
   flex: 1;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  margin-left: -8%; 
+  margin-left: -8%;
 }
 
 .subTitle {
-  font-family: 'NationalPension', sans-serif;
+  font-family: "NationalPension", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 180%;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .mainTitle {
-  font-family: 'NationalPension', sans-serif;
+  font-family: "NationalPension", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
 }
 
 .highlight {
-  font-family: 'NationalPension', sans-serif;
+  font-family: "NationalPension", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 180%;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .description {
-  font-family: 'NationalPension', sans-serif;
+  font-family: "NationalPension", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
   text-align: justify;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .notice {
-  font-family: 'NationalPension', sans-serif;
+  font-family: "NationalPension", sans-serif;
   font-weight: 400; /* 250 → 400 */
   font-size: 14px;
   line-height: 180%;
-  margin-top: 20px; 
+  margin-top: 20px;
   color: rgba(255, 255, 255, 0.9);
 }
