@@ -116,7 +116,7 @@
     width: 80vw;
     align-items: center;
     text-align: center;
-    position: static; /* Removed absolute positioning on mobile */
+    position: static;
   }
 
   .korDescription,

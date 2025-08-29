@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background-color: #5c3bfe;
-  color: white; /* 텍스트 색상 통일 */
+  color: white; 
   padding: 200px 20px;
   box-sizing: border-box;
   min-height: 100vh;
@@ -12,18 +12,37 @@
 
 @media (min-width: 768px) {
   .back {
-    flex-direction: row; /* 화면이 넓어지면 가로 방향으로 정렬 */
+    flex-direction: row;
     justify-content: space-between;
     padding: 80px;
   }
   .imageBox {
-    justify-content: flex-start; /* 이미지를 왼쪽으로 정렬 */
-    margin-left: -50px; /* 원하는 만큼 왼쪽으로 이동 */
+    justify-content: flex-start
+    margin-left: -50px;
   }
+}
+@font-face {
+  font-family: 'NationalPension';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NationalPension';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NationalPension';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
 }
 
 .textBox {
-  /* position: absolute 제거 */
   flex: 1;
   max-width: 800px;
   padding: 20px;
@@ -41,59 +60,54 @@
 .imageBox {
   flex: 1;
   display: flex;
-  justify-content: center; /* 기본적으로 이미지를 중앙에 배치 */
+  justify-content: center; 
   align-items: center;
-  margin-left: -8%; /* 기본 마진을 0으로 설정 */
+  margin-left: -8%; 
 }
 
 .subTitle {
-  /* position: absolute 제거 */
-  font-family: "NPS font", sans-serif;
+  font-family: 'NationalPension', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 180%;
-  margin-bottom: 10px; /* 아래쪽 여백 추가 */
+  margin-bottom: 10px; 
   color: rgba(255, 255, 255, 0.9);
 }
 
 .mainTitle {
-  /* position: absolute 제거 */
-  font-family: "NPS font", sans-serif;
+  font-family: 'NationalPension', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  margin-bottom: 20px; /* 아래쪽 여백 추가 */
+  margin-bottom: 20px; 
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
 }
 
 .highlight {
-  /* position: absolute 제거 */
-  font-family: "NPS font", sans-serif;
+  font-family: 'NationalPension', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 180%;
-  margin-bottom: 20px; /* 아래쪽 여백 추가 */
+  margin-bottom: 20px; 
   color: rgba(255, 255, 255, 0.9);
 }
 
 .description {
-  /* position: absolute 제거 */
-  font-family: "NPS font";
+  font-family: 'NationalPension', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
   text-align: justify;
-  margin-bottom: 20px; /* 아래쪽 여백 추가 */
+  margin-bottom: 20px; 
   color: rgba(255, 255, 255, 0.9);
 }
 
 .notice {
-  /* position: absolute 제거 */
-  font-family: "NPS font";
-  font-weight: 250;
-  font-size: 14px; /* 글씨 크기 재조정 */
+  font-family: 'NationalPension', sans-serif;
+  font-weight: 400; /* 250 → 400 */
+  font-size: 14px;
   line-height: 180%;
-  margin-top: 20px; /* 위쪽 여백 추가 */
+  margin-top: 20px; 
   color: rgba(255, 255, 255, 0.9);
 }
