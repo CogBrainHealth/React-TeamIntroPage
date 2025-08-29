@@ -10,41 +10,6 @@
   min-height: 100vh;
 }
 
-@media (min-width: 768px) {
-  .back {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 80px;
-  }
-  .imageBox {
-    justify-content: flex-start;
-    margin-left: -50px;
-  }
-}
-@font-face {
-  font-family: "NationalPension";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontRegular.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NationalPension";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NationalPension";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontExtraBold.woff2")
-    format("woff2");
-  font-weight: 800;
-  font-display: swap;
-}
-
 .textBox {
   flex: 1;
   max-width: 800px;
@@ -52,12 +17,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@media (min-width: 768px) {
-  .textBox {
-    flex: 1;
-  }
 }
 
 .imageBox {
@@ -72,7 +31,7 @@
   font-family: "NationalPension", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  line-height: 180%;
+  line-height: 1.8;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -80,8 +39,8 @@
 .mainTitle {
   font-family: "NationalPension", sans-serif;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 150%;
+  font-size: clamp(24px, 5vw, 40px);
+  line-height: 1.2;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
@@ -91,7 +50,7 @@
   font-family: "NationalPension", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 180%;
+  line-height: 1.8;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -100,7 +59,7 @@
   font-family: "NationalPension", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 200%;
+  line-height: 2;
   text-align: justify;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.9);
@@ -108,9 +67,72 @@
 
 .notice {
   font-family: "NationalPension", sans-serif;
-  font-weight: 400; /* 250 → 400 */
+  font-weight: 400;
   font-size: 14px;
-  line-height: 180%;
+  line-height: 1.8;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+/* PC/태블릿 이상 */
+@media (min-width: 768px) {
+  .back {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+  }
+  .imageBox {
+    justify-content: flex-start;
+    margin-left: -50px;
+    display: flex;
+  }
+  .textBox {
+    flex: 1;
+  }
+}
+
+/* 모바일 대응 */
+@media (max-width: 767px) {
+  .back {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .imageBox {
+    display: none;
+  }
+
+  .textBox {
+    width: 100%;
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+    white-space: normal;
+    margin-bottom: 15px;
+  }
+
+  .highlight {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .notice {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
 }
