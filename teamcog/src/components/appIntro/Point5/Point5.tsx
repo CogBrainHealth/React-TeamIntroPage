@@ -1,4 +1,4 @@
-"use client"; // Add this line at the very top
+"use client";
 
 import styles from "./global.module.css";
 import Image from "next/image";
@@ -20,6 +20,10 @@ export default function Point5() {
           <br /> 추적할 수 있고, 보호자와 공유해 함께 관리할 수 있어요. 믿을 수
           있는 관리가 필요할 때,
           <br /> Cog콕이 기관과 가족의 연결고리가 됩니다.
+          <br />
+          <br />
+          <br /> 지금 바로 Cog으로 시작해보세요.
+          <br /> 뇌 건강, 내가 직접 관리할 수 있습니다
         </p>
       </div>
 
@@ -36,7 +40,6 @@ export default function Point5() {
         </Link>
       </p>
 
-      {/* ✅ 클릭 이벤트는 div에 적용 */}
       <div className={styles.downLoadImage} onClick={handleImageClick}>
         <Image
           src="/appImages/Point5DownloadImg.svg"

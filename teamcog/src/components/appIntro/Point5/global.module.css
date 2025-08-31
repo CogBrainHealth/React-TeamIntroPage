@@ -71,3 +71,56 @@
   bottom: 0px;
   right: 120px;
 }
+
+@media (max-width: 768px) {
+  .back {
+    flex-direction: column;       
+    justify-content: flex-start;  
+    align-items: center;
+    padding: 20px;
+    height: auto;                 
+    position: relative;
+    background-position: top center; 
+  }
+
+  .textWrapper {
+    transform: translateY(0);    
+    text-align: center;          
+    margin-bottom: 20px;       
+  }
+
+  .headerIndex {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .headerTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .headerSubtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    position: relative;          
+    bottom: auto;
+    left: auto;
+    text-align: center;           
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .info a {
+    color: #ffffffb2;
+  }
+
+  .downLoadImage {
+    position: relative;          
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;             
+}

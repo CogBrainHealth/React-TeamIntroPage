@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const PhoneFrame = styled.div`
   position: relative;
   width: 320px;
@@ -20,6 +19,13 @@ export const PhoneFrame = styled.div`
     z-index: 2;
     pointer-events: none;
   }
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: calc(80vw * 2);
+    max-width: 320px;
+    max-height: 640px;
+  }
 `;
 
 export const Screen = styled.div`
@@ -29,12 +35,12 @@ export const Screen = styled.div`
   height: 98%;
   bottom: 1%;
   overflow: hidden;
-  clip-path: inset(0 round 50px); // 네 모서리를 둥글게 잘라냄
+  clip-path: inset(0 round 50px);
   z-index: 1;
-`;
 
-export const SlideImage = styled.img`
-  width: 100%;
-  height: 100%; // ✅ Frame 높이에 딱 맞게 채우기
-  object-fit: cover; // contain → cover 로 바꾸면 화면 꽉 채움
+  @media (max-width: 768px) {
+    left: 5.5%;
+    width: 89%;
+    height: 98%;
+  }
 `;
