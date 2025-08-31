@@ -1,3 +1,4 @@
+"use client";
 import styles from "./startSection.module.css";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -47,8 +48,8 @@ export default function StartAppSection() {
               혼자서 뭘 해야 할지도 막막하죠. Cog콕은 그런 순간을 위한 앱입니다.{" "}
               <br />
               <br />
-              간단한 검사로 내 인지 상태를 점검하고, 게임처럼 훈련하며 매일 조금씩
-              생활습관을 바꿔나갑니다. <br />
+              간단한 검사로 내 인지 상태를 점검하고, 게임처럼 훈련하며 매일
+              조금씩 생활습관을 바꿔나갑니다. <br />
               뇌영양제, 식단, 운동까지 당신에게 꼭 맞는 가이드를 제공합니다.{" "}
               <br />
               <br />

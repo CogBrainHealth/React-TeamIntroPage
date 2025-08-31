@@ -95,12 +95,28 @@
   margin: 0;
   text-align: left;
 }
+.pcOnly {
+  display: block;
+}
+.mobileOnly {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .mainContent {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+
+  /* PC요소 숨기기 */
+  .pcOnly {
+    display: none !important;
+  }
+
+  /* 모바일요소 보이기 */
+  .mobileOnly {
+    display: block !important;
   }
 
   .imageWrapper {
@@ -114,25 +130,17 @@
     gap: 10px;
   }
 
-  .topRightImageContainer {
-    width: 80%;
-    max-width: 300px;
-    aspect-ratio: 4/3; /* 모바일에서도 비율 유지 */
-  }
-
   .textContainer {
     width: 90%;
     text-align: center;
   }
 
-  .korDescription,
-  .engDescription {
+  .korDescription {
     font-size: 1rem;
     text-align: center;
   }
 
-  .korAddedDescription,
-  .engAddedDescription {
+  .korAddedDescription {
     font-size: 0.75rem;
     text-align: center;
   }

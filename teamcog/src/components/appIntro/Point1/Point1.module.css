@@ -14,7 +14,6 @@
   padding: 0 20px;
   max-width: 600px;
   width: 100%;
-
   margin-left: 10%;
 }
 
@@ -23,7 +22,6 @@
   font-weight: 700;
   font-size: clamp(20px, 4vw, 30px);
   line-height: 100%;
-  letter-spacing: 0;
   color: #facb67;
   margin-bottom: 10px;
 }
@@ -33,7 +31,6 @@
   font-weight: 700;
   font-size: clamp(30px, 6vw, 40px);
   line-height: 150%;
-  letter-spacing: 0;
   color: #6349eb;
   margin-bottom: 20px;
 }
@@ -42,7 +39,30 @@
   font-family: "NPS font", sans-serif;
   font-weight: 700;
   font-size: clamp(16px, 3vw, 20px);
-  line-height: 100%;
-  letter-spacing: 0;
+  line-height: 120%;
   color: #52505a;
+}
+
+@media (max-width: 767px) {
+  .back {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .textContainer {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .headerTitle {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .headerSubtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
