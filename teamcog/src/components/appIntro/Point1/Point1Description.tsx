@@ -1,3 +1,4 @@
+"use client";
 import styles from "./description.module.css";
 import Image from "next/image";
 
@@ -5,7 +6,8 @@ export default function Point1Description() {
   return (
     <section className={styles.back}>
       <div className={styles.mainContent}>
-        <div className={styles.imageWrapper}>
+        {/* PC용 메인 이미지 */}
+        <div className={`${styles.imageWrapper} ${styles.pcOnly}`}>
           <div className={styles.mainImageContainer}>
             <Image
               src="/appimages/Point1PhoneImg.svg"
@@ -18,7 +20,8 @@ export default function Point1Description() {
         </div>
 
         <div className={styles.rightItem}>
-          <div className={styles.topRightImageContainer}>
+          {/* PC에서만 보이는 상단 이미지 */}
+          <div className={`${styles.topRightImageContainer} ${styles.pcOnly}`}>
             <Image
               src="/appimages/Point1Groups.png"
               alt="MMSE 그룹"
@@ -27,6 +30,8 @@ export default function Point1Description() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 15vw, 100vw"
             />
           </div>
+
+          {/* 텍스트 */}
           <div className={styles.textContainer}>
             <p className={styles.korDescription}>
               - <br />
@@ -39,14 +44,29 @@ export default function Point1Description() {
               ※ 이 검사는 의료 진단이 아닌, 자기 건강 관리를 위한 참고용입니다.
               <br />
             </p>
-            <p className={styles.engDescription}>
+
+            {/* 영어 설명은 모바일에서 숨김 */}
+            <p className={`${styles.engDescription} ${styles.pcOnly}`}>
               <br />
               Cog콕 uses MMSE-based tests and game data to check your memory,
               <br /> language, attention, and spatial skills. <br />
             </p>
-            <p className={styles.engAddedDescription}>
+            <p className={`${styles.engAddedDescription} ${styles.pcOnly}`}>
               ※ For personal health tracking only, not a medical diagnosis.
             </p>
+          </div>
+
+          {/* 모바일에서만 보이는 메인 이미지 (텍스트 뒤로 이동) */}
+          <div className={`${styles.imageWrapper} ${styles.mobileOnly}`}>
+            <div className={styles.mainImageContainer}>
+              <Image
+                src="/appimages/Point1PhoneImg.svg"
+                alt="MMSE검사 "
+                fill
+                priority
+                sizes="100vw"
+              />
+            </div>
           </div>
         </div>
       </div>
