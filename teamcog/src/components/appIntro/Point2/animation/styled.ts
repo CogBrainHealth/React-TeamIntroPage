@@ -40,8 +40,8 @@ export const Screen = styled.div`
 
   @media (max-width: 768px) {
     left: 5.5%;
-    width: 89%;
-    height: 98%;
+    width: 60%;
+    aspect-ratio: 1 / 2;
   }
 `;
 
