@@ -48,7 +48,6 @@ export const SlideImage = styled.img`
   height: 100%;
   object-fit: cover;
   @media (max-width: 768px) {
-    width: 60%;
-    aspect-ratio: 1 / 2;
+    object-fit: cover;
   }
 `;
