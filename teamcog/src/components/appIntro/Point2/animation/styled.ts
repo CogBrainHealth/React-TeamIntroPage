@@ -22,7 +22,7 @@ export const PhoneFrame = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 60%;
     aspect-ratio: 1 / 2;
     max-width: 320px;
   }
