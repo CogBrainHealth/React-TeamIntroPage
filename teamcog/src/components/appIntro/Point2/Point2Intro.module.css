@@ -74,6 +74,11 @@
   font-style: normal;
 }
 @media (max-width: 767px) {
+  .back {
+    min-height: auto;
+    flex-direction: column;
+    padding: 60px 5% 40px;
+  }
   .container {
     flex-direction: column;
     align-items: center;
