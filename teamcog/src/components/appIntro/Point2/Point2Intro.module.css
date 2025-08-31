@@ -13,7 +13,6 @@
   width: 100%;
   padding: 0 5%;
   box-sizing: border-box;
-  margin-left: %;
 }
 
 .textSection {
@@ -55,6 +54,7 @@
   font-size: 20px;
   line-height: 100%;
   color: #52505a;
+  margin-top: 8px;
 }
 
 .headerAddSubtitle {
@@ -63,6 +63,7 @@
   font-size: 18px;
   line-height: 150%;
   color: #000000;
+  margin-top: 24px;
 }
 
 .headerengSubtitle {
@@ -73,12 +74,8 @@
   color: #00000080;
   font-style: normal;
 }
+
 @media (max-width: 767px) {
-  .back {
-    min-height: auto;
-    flex-direction: column;
-    padding: 60px 5% 40px;
-  }
   .container {
     flex-direction: column;
     align-items: center;
@@ -113,11 +110,13 @@
   .headerSubtitle {
     font-size: 16px;
     line-height: 1.4;
+    margin-top: 0;
   }
 
   .headerAddSubtitle {
     font-size: 14px;
     line-height: 1.4;
+    margin-top: 0;
   }
 
   .headerengSubtitle {

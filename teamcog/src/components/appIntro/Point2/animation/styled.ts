@@ -22,8 +22,8 @@ export const PhoneFrame = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 80vw;
-    height: calc(80vw * 2);
+    width: 100%;
+    height: calc(100% * 2);
     max-width: 320px;
     max-height: 640px;
   }

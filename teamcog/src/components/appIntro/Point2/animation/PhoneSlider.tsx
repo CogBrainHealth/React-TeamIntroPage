@@ -11,7 +11,6 @@ const images = [
 
 const PhoneSlider = () => {
   const [current, setCurrent] = useState(0);
-  const [frameWidth, setFrameWidth] = useState(320);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,22 +19,8 @@ const PhoneSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const vw = window.innerWidth;
-      if (vw <= 768) {
-        setFrameWidth(vw * 0.8);
-      } else {
-        setFrameWidth(320);
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <PhoneFrame style={{ width: frameWidth, height: frameWidth * 2 }}>
+    <PhoneFrame>
       <Screen>
         <motion.div
           style={{
