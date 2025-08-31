@@ -91,11 +91,13 @@
   }
 }
 
-/* 모바일 대응 */
+/* 모바일 대응 */ /* 모바일 대응 */
 @media (max-width: 767px) {
   .back {
     flex-direction: column;
     padding: 40px 20px;
+    text-align: center; /* 추가 */
+    align-items: center; /* 중앙정렬 */
   }
 
   .imageBox {
@@ -106,6 +108,7 @@
     width: 100%;
     max-width: none;
     padding: 0 10px;
+    text-align: center; /* 추가 */
   }
 
   .mainTitle {
