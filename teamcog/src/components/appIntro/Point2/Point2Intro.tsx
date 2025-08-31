@@ -36,9 +36,9 @@ export default function Point2Intro() {
           </p>
         </section>
 
-        <div className={styles.sliderSection}>
+        <section className={styles.sliderSection}>
           <PhoneSlider />
-        </div>
+        </section>
       </div>
     </div>
   );

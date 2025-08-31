@@ -92,9 +92,10 @@
   }
 
   .sliderSection {
-    width: 100%;
+    width: 60%;
+    height: 40%;
     max-width: 360px;
-    margin-top: 20px;
+    margin-top: 0%;
     overflow: hidden;
   }
 

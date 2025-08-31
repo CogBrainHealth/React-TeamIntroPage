@@ -15,7 +15,7 @@ const PhoneSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 3000); // 2초 이동 + 1초 정지
     return () => clearInterval(interval);
   }, []);
 
