@@ -40,8 +40,6 @@ export const Screen = styled.div`
 
   @media (max-width: 768px) {
     left: 5.5%;
-    width: 60%;
-    aspect-ratio: 1 / 2;
   }
 `;
 
@@ -49,4 +47,8 @@ export const SlideImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @media (max-width: 768px) {
+    width: 60%;
+    aspect-ratio: 1 / 2;
+  }
 `;
