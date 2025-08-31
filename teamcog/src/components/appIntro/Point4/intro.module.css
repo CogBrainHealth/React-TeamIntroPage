@@ -1,29 +1,26 @@
 .back {
-  /* Use Flexbox to align content */
   display: flex;
-  justify-content: flex-start; /* Aligns content to the left */
-  align-items: center; /* Vertically centers the content */
+  justify-content: flex-start;
+  align-items: center;
   height: 100vh;
   background-color: #ffffff;
-  padding: 20px; /* Adds padding for spacing on smaller screens */
+  padding: 20px;
 }
 
 .textContainer {
-  /* This container holds all the text and stacks it vertically */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 800px; /* Sets a max-width for better readability on large screens */
+  max-width: 800px;
   width: 100%;
-  margin-left: 10%; /* Adds margin to the left for positioning */
+  margin-left: 10%;
 }
 
 .headerIndex {
-  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: clamp(24px, 3vw, 30px); /* Responsive font size */
+  font-size: clamp(24px, 3vw, 30px);
   line-height: 100%;
   letter-spacing: 0;
   color: #facb67;
@@ -31,10 +28,9 @@
 }
 
 .headerTitle {
-  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 700;
-  font-size: clamp(32px, 5vw, 40px); /* Responsive font size */
+  font-size: clamp(32px, 5vw, 40px);
   line-height: 150%;
   letter-spacing: 0;
   color: #6349eb;
@@ -42,7 +38,6 @@
 }
 
 .headerSubtitle {
-  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 700;
   font-size: clamp(16px, 2.5vw, 20px);
@@ -53,7 +48,6 @@
 }
 
 .headerAddSubtitle {
-  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 500;
   font-size: clamp(14px, 2vw, 18px);
@@ -65,7 +59,6 @@
 }
 
 .headerengSubtitle {
-  /* Remove absolute positioning. Use margin for spacing. */
   font-family: "NPS font", sans-serif;
   font-weight: 200;
   font-size: clamp(12px, 1.5vw, 15px);
@@ -73,4 +66,42 @@
   letter-spacing: 0;
   color: #000000;
   margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .back {
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .textContainer {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .headerIndex {
+    font-size: 20px;
+  }
+
+  .headerTitle {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .headerSubtitle {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .headerAddSubtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .headerengSubtitle {
+    display: none;
+  }
 }

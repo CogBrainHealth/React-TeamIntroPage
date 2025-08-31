@@ -22,7 +22,7 @@ export default function Functions() {
       style={{
         display: isMobile ? "flex" : "block",
         flexDirection: isMobile ? "column" : undefined,
-        gap: isMobile ? "20px" : undefined,
+        gap: isMobile ? "0px" : undefined,
         alignItems: isMobile ? "center" : undefined,
         width: "100%",
       }}
