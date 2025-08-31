@@ -62,3 +62,27 @@
   color: #000000;
   margin-top: 0;
 }
+@media (max-width: 767px) {
+  .back {
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .textContainer {
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .headerIndex,
+  .headerTitle,
+  .headerSubtitle,
+  .headerAddSubtitle {
+    text-align: center;
+  }
+
+  .headerengSubtitle {
+    display: none;
+  }
+}
