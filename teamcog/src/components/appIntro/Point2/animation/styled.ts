@@ -23,9 +23,8 @@ export const PhoneFrame = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: calc(100% * 2);
+    aspect-ratio: 1 / 2;
     max-width: 320px;
-    max-height: 640px;
   }
 `;
 
