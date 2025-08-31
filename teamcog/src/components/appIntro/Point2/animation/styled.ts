@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const PhoneFrame = styled.div`
   position: relative;
   width: 320px;
@@ -43,4 +44,10 @@ export const Screen = styled.div`
     width: 89%;
     height: 98%;
   }
+`;
+
+export const SlideImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
