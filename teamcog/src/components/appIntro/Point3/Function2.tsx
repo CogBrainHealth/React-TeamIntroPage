@@ -18,7 +18,7 @@ export default function Function2() {
       </div>
       <Image
         className={styles.image}
-        src="/appImages/Point3Function2.svg"
+        src="/appImages/Point3function2.svg"
         alt="function1"
         width={500}
         height={500}

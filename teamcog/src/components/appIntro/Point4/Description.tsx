@@ -22,7 +22,7 @@ export default function Desctription() {
       </div>
       <div className={styles.imageContainer}>
         <Image
-          src="/appimages/Point4PhoneImg.svg"
+          src="/appImages/Point4PhoneImg.svg"
           alt="MMSE 그룹"
           fill
           priority

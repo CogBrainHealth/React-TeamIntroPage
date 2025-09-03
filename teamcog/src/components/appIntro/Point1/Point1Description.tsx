@@ -10,7 +10,7 @@ export default function Point1Description() {
         <div className={`${styles.imageWrapper} ${styles.pcOnly}`}>
           <div className={styles.mainImageContainer}>
             <Image
-              src="/appimages/Point1PhoneImg.svg"
+              src="/appImages/Point1PhoneImg.svg"
               alt="MMSE검사 "
               fill
               priority
@@ -23,7 +23,7 @@ export default function Point1Description() {
           {/* PC에서만 보이는 상단 이미지 */}
           <div className={`${styles.topRightImageContainer} ${styles.pcOnly}`}>
             <Image
-              src="/appimages/Point1Groups.png"
+              src="/appImages/Point1Groups.png"
               alt="MMSE 그룹"
               fill
               priority
