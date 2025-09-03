@@ -15,7 +15,7 @@ export default function GotoButtonPage() {
           onClick={() => router.push("/AppIntro")}
         >
           <Image
-            src="/GOtoButton.svg"
+            src="/GotoButton.svg"
             alt="gotoButton"
             width={300}
             height={300}
